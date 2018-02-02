@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Elvira Designs Logos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style type="text/css">
+div#navigation ul { 
+	padding: 5px; 
+	list-style-type: none;
+	} 
+ 
+div#navigation ul li {  
+	display: inline;  
+	float: left;
+	}
+div#navigation ul li div {  
+	height: 140px;
+	width: 140px;
+	}
+
+div#navigation ul li#brochures div    {  width: 140px; }
+div#navigation ul li#publications div {  width: 151px; }
+div#navigation ul li#exhibition div   {  width: 119px; }
+div#navigation ul li#logos div        {  width: 121px; }
+div#navigation ul li#posters div      {  width: 107px; }
+div#navigation ul li#cdcovers div     {  width: 132px; }
+
+div#navigation ul li div img {  
+	width: 100%;  
+	height: auto;
+	}
+div#navigation ul li div img.word {  
+	visibility: hidden;
+	}
+div#navigation ul li.visible div img.word {  
+	visibility: visible;
+	}
+</style>
+<script language="JavaScript">
+	function showLayer(id) {
+		document.getElementById(id).style.visibility = 'visible';
+	}
+	
+	function hideLayer(id) {
+		document.getElementById(id).style.visibility = 'hidden';
+	}
+        jQuery(function($){
+		navcols = $('div#navigation li.navcol');
+		navcols.mouseenter(function(){
+			if (this != navcols.filter('.visible')[0]) {
+				navcols.filter('.visible').removeClass('visible');
+				$(this).addClass('visible');
+			}
+		});
+	});
+</script>
+</head>
+<body bgcolor="#FFFFFF">
+    <!--Header-->
+    <div id="ElviraMoran" style="position:absolute; left:9px; top:170px; z-index:1;"><a onMouseOver="showLayer('contact')" onMouseOut="hideLayer('contact')" href="mailto:elviradesigns@gmail.com"><img src="images/index/IndexEMGD.jpg" alt="Elvira Mor&aacute;n; Graphic Design; NYC / 917-816-2460 / elviradesigns@gmail.com" border="0"><!-- usemap="#Map" --></a>
+    	<!--<map name="Map">
+          <area shape="rect" coords="100,42,289,64" href="mailto:elvira@elviradesigns.com" onMouseOver="showLayer('contact')" alt="elvira@elviradesigns.com">
+	</map>-->
+    </div>    
+    <!--Contact-->
+	<div id="contact" style="position:absolute; left:9px; top:232px; z-index:2; visibility: hidden;"><a onMouseOver="showLayer('contact')" onMouseOut="hideLayer('contact')"><img border="0" src="images/contact/bio+pict.jpg"></a>
+    	<div id="contact" style="position:absolute; left:3px; top:150px; z-index:3;"><a href="resume.pdf" target="_blank" onMouseOver="showLayer('contact')"><img border="0" src="images/contact/download.jpg"></a></div>
+    </div>
+    <!--Navigation-->
+		<div id="navigation">
+<ul>
+    <li class="navcol" id="brochures"><a href="/brochures.html"><div>
+		<img class="word" src="/images/nav/word-brochures.png">
+		<img class="open" src="/images/nav/open-brochures.png" alt="Brochures">
+	    </div>
+    </a></li>
+    <li class="navcol" id="publications"><a href="/publications.html"><div>
+		<img class="word" src="/images/nav/word-publications.png">
+		<img class="open" src="/images/nav/open-publications.png" alt="Publications">
+	    </div>
+    </a></li>
+    <li class="navcol" id="exhibition"><a href="/exhibition_id.html"><div>
+		<img class="word" src="/images/nav/word-exhibition.png">
+		<img class="open" src="/images/nav/open-exhibition.png" alt="Exhibition">
+	    </div>
+    </a></li>
+    <li class="navcol" id="logos"><a href="/logos.html"><div>
+		<img class="word" src="/images/nav/word-logos.png">
+		<img class="open" src="/images/nav/open-logos.png" alt="Logos">
+	    </div>
+    </a></li>
+    <li class="navcol" id="posters"><a href="/posters.html"><div>
+		<img class="word" src="/images/nav/word-posters.png">
+		<img class="open" src="/images/nav/open-posters.png" alt="Posters">
+	    </div>
+    </a></li>
+    <li class="navcol" id="cdcovers"><a href="/cdcovers.html"><div>
+		<img class="word" src="/images/nav/word-cdcovers.png">
+		<img class="open" src="/images/nav/open-cdcovers.png" alt="CD Covers">
+	    </div>
+    </a></li>
+</ul>
+		</div>
+</body>
+</html>
